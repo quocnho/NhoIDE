@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
   use { "akinsho/toggleterm.nvim", config = config("core.toggleterm") }
   use { "ahmedkhalf/project.nvim", config = config("core.project") }
   use "lewis6991/impatient.nvim"
-  use "lukas-reineke/indent-blankline.nvim"
+  -- use "lukas-reineke/indent-blankline.nvim"
   use { "goolord/alpha-nvim", config = config("core.alpha") }
   use { "folke/which-key.nvim" }
   use { 'stevearc/dressing.nvim' }
@@ -58,12 +58,10 @@ return require('packer').startup(function(use)
   use({ "brglng/vim-im-select" })
   use({ "terryma/vim-expand-region" })
   use("voldikss/vim-translator")
-  use({ "SmiteshP/nvim-navic" })
-  use({"mbbill/undotree"})
+  -- use({ "SmiteshP/nvim-navic" })
+  use({ "mbbill/undotree" })
 
-  use { "numToStr/Comment.nvim", config = function()
-    require('Comment').setup()
-  end } -- Easily comment stuff
+  use { "numToStr/Comment.nvim", config = function() require('Comment').setup() end } -- Easily comment stuff
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "RRethy/vim-illuminate" -- highlighting other uses of the current word under the cursor
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
@@ -78,7 +76,7 @@ return require('packer').startup(function(use)
   --  use "b3nj5m1n/kommentary"
 
   -- java
-  use "mfussenegger/nvim-jdtls"
+  -- use "mfussenegger/nvim-jdtls"
 
   -- scala
   use({ 'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" } })
@@ -103,11 +101,11 @@ return require('packer').startup(function(use)
 
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   -- You can alias plugin names
   use { 'dracula/vim', as = 'dracula' }
-  use "folke/lsp-colors.nvim"
+  -- use "folke/lsp-colors.nvim"
   use { "ellisonleao/gruvbox.nvim" }
   use "sainnhe/edge"
 
@@ -127,7 +125,7 @@ return require('packer').startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "RishabhRD/nvim-lsputils"
+  -- use "RishabhRD/nvim-lsputils"
   use "j-hui/fidget.nvim"
   --  use "arkav/lualine-lsp-progress"
   --  use "nvim-lua/lsp-status.nvim"
@@ -139,7 +137,7 @@ return require('packer').startup(function(use)
   use "mfussenegger/nvim-dap"
   use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
   use "theHamsta/nvim-dap-virtual-text"
-  use "mfussenegger/nvim-dap-python"
+  -- use "mfussenegger/nvim-dap-python"
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", config = config("core.telescope") }
@@ -151,9 +149,9 @@ return require('packer').startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "nvim-treesitter/nvim-tree-docs"
-  use "p00f/nvim-ts-rainbow"
-  use "nvim-treesitter/playground"
+  -- use "nvim-treesitter/nvim-tree-docs"
+  -- use "p00f/nvim-ts-rainbow"
+  -- use "nvim-treesitter/playground"
 
   -- aerial
   use "stevearc/aerial.nvim"
@@ -164,29 +162,19 @@ return require('packer').startup(function(use)
 
   -- rest
   use "NTBBloodbath/rest.nvim"
-
   -- colorizer
-  use "norcalli/nvim-colorizer.lua"
-
+  -- use "norcalli/nvim-colorizer.lua"
   -- trouble
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   }
-  -- use "kevinhwang91/nvim-bqf"
-
+  use "kevinhwang91/nvim-bqf"
   -- install without yarn or npm
   use({ "iamcco/markdown-preview.nvim", run = function() vim.fn["mkdp#util#install"]() end, })
   use "ekickx/clipboard-image.nvim"
-
   -- sniprun
-  use "michaelb/sniprun"
-  -- Note taking
-  use { "vhyrro/neorg" }
-  use { "nvim-neorg/neorg-telescope" }
-  use { "max397574/neorg-contexts" }
-  use { "folke/zen-mode.nvim" }
-  use "max397574/neorg-kanban"
+  -- use "michaelb/sniprun"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

@@ -8,7 +8,7 @@ local options = {
   encoding = "utf-8",                      -- always uses UTF-8 as the default encoding
   hlsearch = true,                         -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
-  mouse = "",                             -- allow the mouse to be used in neovim
+  mouse = "a",                             -- allow the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height
   showmode = true,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
@@ -20,7 +20,7 @@ local options = {
   termguicolors = true,                    -- set term gui colors (most terminals support this)
   timeoutlen = 100,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
-  undodir ="undodir",
+  undodir ="/undodir",
   updatetime = 300,                        -- faster completion (4000ms default)
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
   expandtab = true,                        -- convert tabs to spaces
@@ -56,6 +56,7 @@ vim.cmd('autocmd Filetype css setlocal ts=2 sw=2 expandtab')
 vim.cmd('autocmd Filetype html setlocal ts=2 sw=2 expandtab')
 vim.cmd('autocmd Filetype xml setlocal ts=2 sw=2 expandtab')
 vim.cmd('autocmd Filetype yaml setlocal ts=2 sw=2 expandtab')
+vim.cmd('autocmd Filetype dart setlocal ts=2 sw=2 expandtab')
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]

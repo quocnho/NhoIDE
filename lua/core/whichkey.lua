@@ -127,23 +127,23 @@ local leader_opts = {
 local leader_mappings = {
   ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment" },
   --["/"] = { "<cmd>lua require(\"Comment.api\").toggle_current_linewise()<CR>", "Comment" },
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
+  -- ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
-  ["B"] = { "<cmd>DBUIToggle<CR>", "Database" },
+  -- ["B"] = { "<cmd>DBUIToggle<CR>", "Database" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
-  ["C"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  -- ["C"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   --  ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   --[[ ["f"] = { ]]
   --[[   "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>", ]]
   --[[   "Find files", ]]
   --[[ }, ]]
-  ["E"] = { "<cmd>NvimTreeFindFile<cr>", "Find File" },
+  -- ["E"] = { "<cmd>NvimTreeFindFile<cr>", "Find File" },
   f = {
     name = "Files",
     f = { "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",

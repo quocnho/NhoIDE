@@ -21,6 +21,7 @@ local servers = {
   html = require "lsp.settings.html",
   lemminx = require "lsp.settings.lemminx_xml",
   cssls = require "lsp.settings.cssls",
+  emmet_ls = require "lsp.settings.emmet",
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
