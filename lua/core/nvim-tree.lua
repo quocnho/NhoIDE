@@ -127,7 +127,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   filters = {
     dotfiles = false,
-    custom = { "^.git$"},
+    custom = { "^.git$","undodir"},
     exclude = {},
   },
   git = {

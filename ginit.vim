@@ -79,3 +79,21 @@ augroup ScrollbarInit
   autocmd WinEnter,FocusGained           * silent! lua require('scrollbar').show()
   autocmd WinLeave,BufLeave,BufWinLeave,FocusLost            * silent! lua require('scrollbar').clear()
 augroup end
+"Git Commands Add these to your neovim configuration
+
+"Run git status (Entire Repo)
+cnoremap gs !git status
+
+"Git Diff Commands
+"Git Diff of Single File
+cnoremap gd<SPACE> !git diff %
+"Git Diff of (Entire Repo)
+cnoremap gdd !git diff
+:command -nargs=* GitStatus !git diff <args>
+
+"Git Commit
+cnoremap gc GitCommit
+:command -nargs=1 GitCommit !git commit % -m "<args>"
+
+"Git Push
+cnoremap gp !git push

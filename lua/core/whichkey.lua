@@ -174,15 +174,15 @@ local leader_mappings = {
     e = { ":lua require('dapui').float_element(vim.Nil, { enter = true}) <CR>", "FloatElement" },
   },
 
-  n = {
-    name = "Neorg",
-    c = { "<cmd>Neorg gtd capture<cr>", "Add Todo" },
-    v = { "<cmd>Neorg gtd views<cr>", "View Todo" },
-    e = { "<cmd>Neorg gtd edit<cr>", "Edit Todo" },
-    n = { "<cmd>Neorg<cr>", "Neorg" },
-    k = { "<cmd>Neorg kanban <cr>", "Kanban" },
-    j = { "<cmd>Neorg journal today<cr>", "Journal Today" },
-  },
+  -- n = {
+  --   name = "Neorg",
+  --   c = { "<cmd>Neorg gtd capture<cr>", "Add Todo" },
+  --   v = { "<cmd>Neorg gtd views<cr>", "View Todo" },
+  --   e = { "<cmd>Neorg gtd edit<cr>", "Edit Todo" },
+  --   n = { "<cmd>Neorg<cr>", "Neorg" },
+  --   k = { "<cmd>Neorg kanban <cr>", "Kanban" },
+  --   j = { "<cmd>Neorg journal today<cr>", "Journal Today" },
+
 
   g = {
     name = "Git",
