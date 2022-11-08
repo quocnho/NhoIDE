@@ -159,6 +159,7 @@ return require('packer').startup(function(use)
   -- Git
   use { "lewis6991/gitsigns.nvim", config = config("core.gitsigns") }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim', config = config("core.diffview-nvim") }
+  use {"tpope/vim-fugitive"}
 
   -- rest
   use "NTBBloodbath/rest.nvim"
