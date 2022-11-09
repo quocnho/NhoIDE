@@ -24,6 +24,7 @@ keymap("c", "<C-j>", "<C-n>", { noremap = false })
 keymap("c", "<C-k>", "<C-p>", { noremap = false })
 -- save file
 keymap("n", "j", "gj", opts)
+keymap("n", "<tab>", "%", opts)
 keymap("n", "k", "gk", opts)
 keymap("n", "<C-s>", ":w<CR>", opts)
 keymap("n", "<C-q>", ":q<CR>", opts)

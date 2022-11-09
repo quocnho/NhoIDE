@@ -18,10 +18,13 @@ local servers = {
   -- volar = require "lsp.settings.volar",
   vuels = require "lsp.settings.vuels",
   tsserver = require "lsp.settings.tsserver",
+  quick_lint_js = require "lsp.settings.javascript",
   html = require "lsp.settings.html",
   lemminx = require "lsp.settings.lemminx_xml",
   cssls = require "lsp.settings.cssls",
+  intelephense = require "lsp.settings.php",
   emmet_ls = require "lsp.settings.emmet",
+  svelt = require "lsp.settings.svelt",
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
