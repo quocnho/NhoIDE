@@ -1,3 +1,7 @@
+local map = vim.keymap.set
+local default_options = { silent = true }
+local expr_options = { expr = true, silent = true }
+
 local opts = { noremap = true, silent = true }
 
 local keymap = vim.api.nvim_set_keymap
@@ -13,7 +17,7 @@ keymap("i", "<C-S-h>", "<C-o>b", opts) -- Move cursor next word
 keymap("i", "<C-j>", "<Down>", opts)
 keymap("i", "<C-k>", "<Up>", opts)
 keymap("i", "<C-l>", "<Right>", opts)
-keymap("i", "<C-S-l>", "<C-o>w", opts) -- Move cursor back word
+-- keymap("i", "<C-S-l>", "<C-o>w", opts) -- Move cursor back word
 keymap("i", "<C-a>", "<C-o>^", opts)
 keymap("i", "<C-S-a>", "<Home>", opts)
 keymap("i", "<C-S-e>", "<End>", opts)
@@ -64,6 +68,9 @@ keymap("n", "<C-S-d>", "30j", opts)
 keymap("n", "<C-S-u>", "30k", opts)
 keymap("v", "<C-j>", "5j", opts)
 keymap("v", "<C-k>", "5k", opts)
+map("i", "<C-S-l>", function()
+  return require("utils").escapePair()
+end, default_options)
 -- Nvimtree, configured in whichkey
 -- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
