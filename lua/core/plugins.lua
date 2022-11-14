@@ -58,7 +58,7 @@ return require('packer').startup(function(use)
   use({ "brglng/vim-im-select" })
   use({ "terryma/vim-expand-region" })
   use("voldikss/vim-translator")
-  -- use({ "SmiteshP/nvim-navic" })
+  use({ "SmiteshP/nvim-navic" })
   use({ "mbbill/undotree" })
 
   use { "numToStr/Comment.nvim", config = function() require('Comment').setup() end } -- Easily comment stuff

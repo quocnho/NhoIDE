@@ -24,7 +24,7 @@ local servers = {
   cssls = require "lsp.settings.cssls",
   intelephense = require "lsp.settings.php",
   emmet_ls = require "lsp.settings.emmet",
-  svelt = require "lsp.settings.svelt",
+  -- svelte-language-server = require "lsp.settings.svelt",
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
