@@ -256,7 +256,7 @@ local leader_mappings = {
     -- n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
     -- p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
     -- f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-    h = { "<cmd>ToggleTerm size=3 direction=horizontal<cr>", "Horizontal" },
+    h = { "<cmd>ToggleTerm size=7 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=50 direction=vertical<cr>", "Vertical" },
   },
 }
