@@ -24,9 +24,9 @@
 
 require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   auto_reload_on_write = true,
-  disable_netrw = false,
-  hijack_cursor = false,
-  hijack_netrw = true,
+  disable_netrw = true,
+  hijack_cursor = true,
+  hijack_netrw = false,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
   open_on_setup = false,
@@ -127,7 +127,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   filters = {
     dotfiles = false,
-    custom = { "^.git$","undodir"},
+    custom = { "^.git$","undodir","^.idea$"},
     exclude = {},
   },
   git = {
